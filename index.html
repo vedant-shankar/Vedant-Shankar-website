@@ -57,11 +57,44 @@ footer{text-align:center;border-top:1px solid #28231a;padding:24px 0;color:#aeb1
 <a class="btn" href="https://youtube.com/@indraflutevibes" target="_blank" rel="noopener">Visit Indra Flute Vibes ↗</a>
 <p class="small">Channel: youtube.com/@indraflutevibes</p>
 </div></div></section>
-<section><div class="wrap"><div class="card">
-<h2>Thank You for Visiting</h2>
-<p>Keep listening, keep learning, and let music bring peace.</p>
-</div></div></section>
-</main>
-<footer><div class="wrap">© Vedant Shankar · Flute Music • Creativity • Melody</div></footer>
-</body>
-</html>
+
+<section>
+  <div class="wrap">
+    <div class="card">
+      <div class="marquee">
+        <div class="marquee-text">
+          ✨ THANK YOU FOR VISITING VEDANT SHANKAR ✨
+          &nbsp;&nbsp;&nbsp;
+          🎵 KEEP LISTENING, KEEP LEARNING 🎵
+          &nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:18px">
+        Keep listening, keep learning, and let music bring peace.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.marquee-text {
+  display: inline-block;
+  color: #ffe7a4;
+  font-size: 20px;
+  font-weight: bold;
+  animation: moveText 14s linear infinite;
+}
+@keyframes moveText {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-text { animation: none; }
+}
+</style>
+
