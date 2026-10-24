@@ -42,8 +42,7 @@ footer{text-align:center;border-top:1px solid #28231a;padding:24px 0;color:#aeb1
 <h1 class="gold-glow">VEDANT SHANKAR</h1>
 <div class="tagline">FLUTE MUSIC • CREATIVITY • MELODY</div>
 <p>Welcome to my musical world — a place for flute music, melodies and creative videos.</p>
-<a class="btn" href="https://youtube.com/@indraflutevibes" target="_blank" rel="noopener">▶ Explore My YouTube</a>
-<a class="btn secondary" href="#about">About Me</a>
+<a class="btn" href="https://youtube.com/@indraflutevibes" target="_blank" rel="noopener" onclick="event.preventDefault(); const link=this; link.classList.add('pressed'); setTimeout(() => { window.open(link.href, '_blank', 'noopener'); link.classList.remove('pressed'); }, 300);">▶ Explore My YouTube</a>
 </div>
 </div></div>
 <section id="about"><div class="wrap"><div class="card">
