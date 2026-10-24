@@ -94,18 +94,29 @@ footer{text-align:center;border-top:1px solid #28231a;padding:24px 0;color:#aeb1
 </section>
 
 <style>
+.
 .marquee {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
+  padding: 15px 0;
+  border: 1px solid rgba(232, 189, 98, 0.65);
+  border-radius: 14px;
+  background: linear-gradient(135deg, #100e09, #292012, #100e09);
+  box-shadow: inset 0 0 18px rgba(232, 189, 98, 0.08),
+              0 0 14px rgba(232, 189, 98, 0.12);
 }
+
 .marquee-text {
   display: inline-block;
   color: #ffe7a4;
   font-size: 20px;
   font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(255, 215, 100, 0.55);
   animation: moveText 6s linear infinite;
 }
+
 @keyframes moveText {
   from { transform: translateX(100%); }
   to { transform: translateX(-100%); }
