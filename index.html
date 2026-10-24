@@ -167,6 +167,28 @@ a:hover {
     transition: none;
   }
   }
+ 
+/* Royal floating thank-you image */
+.thankyou-image {
+  animation: royalFloat 4s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes royalFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thankyou-image {
+    animation: none;
+    will-change: auto;
+  }
+  }
   
 </style>
 
