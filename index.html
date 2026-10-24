@@ -127,5 +127,35 @@ a:hover {
   }
   }
   
+/* Premium gold button effects */
+.btn {
+  box-shadow: 0 4px 14px rgba(212, 164, 67, 0.18);
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease,
+              filter 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:hover {
+  box-shadow: 0 6px 22px rgba(255, 215, 100, 0.38);
+  filter: brightness(1.08);
+}
+
+.btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 8px rgba(255, 215, 100, 0.25);
+}
+
+.btn:focus-visible {
+  outline: 2px solid #ffe7a4;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+  }
+  
 </style>
 
